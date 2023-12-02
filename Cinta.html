@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pujukan untuk Pasangan Tercinta</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .love {
+      font-size: 3em;
+      color: red;
+      text-align: center;
+      margin-top: 50px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    /* Additional styles for enhancement */
+    body {
+      background-image: url('https://via.placeholder.com/150');
+      background-size: cover;
+      background-position: center;
+    }
+
+    header {
+      background-image: linear-gradient(to right, #ff9999, #ff6699);
+      color: white;
+      text-align: center;
+      padding: 50px 0;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    main {
+      padding: 20px;
+      text-align: left;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      margin: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    main p {
+      opacity: 0;
+      margin-bottom: 15px;
+      font-size: 1.2em;
+    }
+
+    footer {
+      background-image: linear-gradient(to right, #333333, #000000);
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Maafkan Aku
+  </header>
+
+  <main>
+    <p>Hai sayang,</p>
+    <p>Saya sangat menyesal atas apa yang terjadi. Kamu sangat penting bagiku dan saya tidak bermaksud menyakiti perasaanmu.</p>
+    <p>Harap kamu memberi saya kesempatan untuk menjelaskan dan memperbaiki segalanya. Aku merindukanmu.</p>
+    <p>Terima kasih atas pengertianmu.</p>
+    <p>Sayang Nazuratul Jannah, ketat-ketat meow meow 🐱</p>
+<div class="love">
+      <span>❤️</span>
+    </div><p>
+  </main>
+
+  <footer>
+    Ikhlas dari Miyul
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="script.js"></script>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    anime.timeline({ loop: true })
+      .add({
+        targets: 'header',
+        translateY: [-50, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutQuart',
+        duration: 1500
+      }).add({
+        targets: 'main p',
+        translateY: [50, 0],
+        opacity: [0, 1],
+        easing: 'easeInOutQuart',
+        duration: 1000,
+        delay: (el, i) => 200 * i
+      });
+  });
+</script>
+</html>
